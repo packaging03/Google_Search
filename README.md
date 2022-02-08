@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+The project is a cloned version of Google home and search features project developed using Next.js and Taiwind Css with SSR and Pagination
+
 ## Getting Started
 
 First, run the development server:
