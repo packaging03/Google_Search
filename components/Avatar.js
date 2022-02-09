@@ -2,7 +2,15 @@
 import React from "react";
 
 const Avatar = ({ url }) => {
-  return <img loading="lazy" src={url} alt="Profile picture" />;
+  return (
+    <img
+      loading="lazy"
+      className="h-9 rounded-full cursor-pointer 
+      hover:border-4"
+      src={url}
+      alt="Profile picture"
+    />
+  );
 };
 
 export default Avatar;

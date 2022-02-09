@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
+import { MdApps } from "react-icons/md";
+// MdApps;
 
 export default function Home() {
   return (
@@ -11,7 +14,7 @@ export default function Home() {
       </Head>
       {/* Header */}
       <header
-        className="flex w-full p-5 justify-between 
+        className="flex w-full p-4 justify-between 
        text-sm text-gray-700"
       >
         {/* Left */}
@@ -24,19 +27,12 @@ export default function Home() {
           <p className="link">Gmail</p>
           <p className="link">Images</p>
           {/* Icon */}
+          <MdApps className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
           {/* Avatar */}
+          <Avatar url="https://lh3.googleusercontent.com/ogw/ADea4I6JXjFF5oXvDHpKLgliCO3Zab7wy3pZiSw9RqzR7A=s64-c-mo" />
         </div>
       </header>
-      {/* <div className="pt-6">
-        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-200 text-teal-700 my-3 p-4 mx-auto ">
-          <h1 className="text-2xl text-sky-700">Hello World</h1>
-          <p>
-            Lorem Ipsum publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 }
