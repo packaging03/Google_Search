@@ -7,9 +7,28 @@ export default function Home() {
     <div>
       <Head>
         <title>Google</title>
-        <link rel='icon' href='/favicon.ico'></link>
+        <link rel="icon" href="/favicon.ico"></link>
       </Head>
-      <div className="pt-6">
+      {/* Header */}
+      <header
+        className="flex w-full p-5 justify-between 
+       text-sm text-gray-700"
+      >
+        {/* Left */}
+        <div className="flex space-x-4 items-center">
+          <p className="link">About</p>
+          <p className="link">Store</p>
+        </div>
+        {/* Right */}
+        <div className="flex space-x-4 items-center">
+          <p className="link">Gmail</p>
+          <p className="link">Images</p>
+          {/* Icon */}
+
+          {/* Avatar */}
+        </div>
+      </header>
+      {/* <div className="pt-6">
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-200 text-teal-700 my-3 p-4 mx-auto ">
           <h1 className="text-2xl text-sky-700">Hello World</h1>
           <p>
@@ -17,7 +36,7 @@ export default function Home() {
             versions of Lorem Ipsum.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
