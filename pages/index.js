@@ -4,11 +4,12 @@ import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
 import { MdApps } from "react-icons/md";
 import { MicrophoneIcon, SearchIcon } from "@heroicons/react/outline";
+import Footer from "../components/Footer";
 // MdApps;
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-screen">
       <Head>
         <title>Google</title>
         <link rel="icon" href="/favicon.ico"></link>
@@ -37,7 +38,7 @@ export default function Home() {
 
       {/* Body */}
 
-      <form className="flex flex-col items-center mt-44 flex-grow">
+      <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
         <Image
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           height={100}
@@ -49,7 +50,14 @@ export default function Home() {
           <input type="text" className="focus:outline-none flex-grow " />
           <MicrophoneIcon className="h-5 ml-3" />
         </div>
+        <div className="flex mt-8 space-x-4 justify-center ">
+          <button className="btn">Google Search</button>
+          <button className="btn">I&apos;m Feeling Lucky</button>
+        </div>
       </form>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
