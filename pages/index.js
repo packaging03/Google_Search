@@ -3,6 +3,7 @@ import Image from "next/image";
 import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
 import { MdApps } from "react-icons/md";
+import { MicrophoneIcon, SearchIcon } from "@heroicons/react/outline";
 // MdApps;
 
 export default function Home() {
@@ -33,6 +34,22 @@ export default function Home() {
           <Avatar url="https://lh3.googleusercontent.com/ogw/ADea4I6JXjFF5oXvDHpKLgliCO3Zab7wy3pZiSw9RqzR7A=s64-c-mo" />
         </div>
       </header>
+
+      {/* Body */}
+
+      <form className="flex flex-col items-center mt-44 flex-grow">
+        <Image
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          height={100}
+          width={300}
+          alt="Google Logo"
+        />
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
+          <SearchIcon className="h-5 mr-3 text-gray-500 " />
+          <input type="text" className="focus:outline-none flex-grow " />
+          <MicrophoneIcon className="h-5 ml-3" />
+        </div>
+      </form>
     </div>
   );
 }
