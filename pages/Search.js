@@ -3,18 +3,21 @@ import React from "react";
 import Header from "../components/Header";
 
 const Search = () => {
-  return <div>
+  return (
+    <div>
       <Head>
-          <title>Search Results</title>
+        <title>Search Results</title>
       </Head>
       {/* Header */}
       <Header />
       {/* Search Result */}
-  </div>;
+    </div>
+  );
 };
 
 export default Search;
 
 export async function getServerSideProps(context) {
-  
+  const useDummyData = false;
+  const data = await fetch(`https://www.googleapis.com/customsearch/v1`);
 }
