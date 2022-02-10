@@ -1,4 +1,5 @@
 import React from "react";
+import PaginationButtons from "./PaginationButtons";
 
 const SearchResults = ({ results }) => {
   return (
@@ -19,13 +20,11 @@ const SearchResults = ({ results }) => {
               </h2>
             </a>
           </div>
-          <p>{result.snippet}</p>
+          <p className="line-clamp-2">{result.snippet}</p>
         </div>
       ))}
-      {/* formattedSearchTime: "0.41"
-formattedTotalResults: "65,600"
-searchTime: 0.409482
-totalResults: "65600" */}
+
+      <PaginationButtons />
     </div>
   );
 };
