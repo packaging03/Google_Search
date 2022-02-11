@@ -2,6 +2,7 @@ import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useRef } from "react";
+import { MdApps, MdSettings, MdSettingsApplications, MdSettingsSuggest } from "react-icons/md";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
 
@@ -33,6 +34,7 @@ const Header = () => {
             ref={searchInputRef}
             className="flex-grow w-full focus:outline-none"
             type="text"
+            defaultValue={router.query.term}
           />
           <XIcon
             className="h-7 sm:mr-3 text-gray-500 cursor-pointer 
@@ -48,10 +50,15 @@ const Header = () => {
             Search
           </button>
         </form>
-        <Avatar
-          className="ml-auto"
-          url="https://lh3.googleusercontent.com/ogw/ADea4I6JXjFF5oXvDHpKLgliCO3Zab7wy3pZiSw9RqzR7A=s64-c-mo"
-        />
+        
+        <div className="flex space-x-2 items-center ml-auto">
+          {/* Icon */}
+          <MdSettings className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
+          <MdApps className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer mr-3" />
+
+          {/* Avatar */}
+          <Avatar url="https://lh3.googleusercontent.com/ogw/ADea4I6JXjFF5oXvDHpKLgliCO3Zab7wy3pZiSw9RqzR7A=s64-c-mo" />
+        </div>
       </div>
 
       {/* Header Options */}

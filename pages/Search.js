@@ -1,12 +1,15 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import { render } from "react-dom";
 import Header from "../components/Header";
 import Response from "../Response";
 import { useRouter } from "next/router";
 import SearchResults from "../components/SearchResults";
+import { usePosition } from "../usePosition";
 
 const Search = ({ results }) => {
+  usePosition();
+
   const router = useRouter();
   return (
     <div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import { useRouter } from "next/router";
 import React from "react";
 import Link from "next/link";

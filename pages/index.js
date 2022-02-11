@@ -1,14 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Avatar from "../components/Avatar";
-import styles from "../styles/Home.module.css";
 import { MdApps } from "react-icons/md";
 import { MicrophoneIcon, SearchIcon } from "@heroicons/react/solid";
 import Footer from "../components/Footer";
 import { useRef } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-// MdApps;
 
 export default function Home() {
   const router = useRouter();
