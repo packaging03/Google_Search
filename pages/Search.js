@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import { render } from "react-dom";
 import Header from "../components/Header";
-// import { API_KEY, CONTEXT_KEY } from "../Keys";
 import Response from "../Response";
 import { useRouter } from "next/router";
 import SearchResults from "../components/SearchResults";

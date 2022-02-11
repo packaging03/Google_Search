@@ -3,10 +3,11 @@ import Image from "next/image";
 import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
 import { MdApps } from "react-icons/md";
-import { MicrophoneIcon, SearchIcon } from "@heroicons/react/outline";
+import { MicrophoneIcon, SearchIcon } from "@heroicons/react/solid";
 import Footer from "../components/Footer";
 import { useRef } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 // MdApps;
 
 export default function Home() {
@@ -33,8 +34,8 @@ export default function Home() {
       >
         {/* Left */}
         <div className="flex space-x-4 items-center">
-          <p className="link">About</p>
-          <p className="link">Store</p>
+          {/* <p className="link">About</p>
+          <p className="link">Store</p> */}
         </div>
         {/* Right */}
         <div className="flex space-x-4 items-center">
@@ -73,6 +74,13 @@ export default function Home() {
           <button className="btn" onClick={search}>
             I&apos;m Feeling Lucky
           </button>
+        </div>
+        <div className="flex text-[13px] mt-5 space-x-2 ">
+          <p>Google offered in: </p>
+          <p className="link text-blue-500">Hausa</p>
+          <p className="link text-blue-500">Igbo</p>
+          <p className="link text-blue-500">Èdè Yorùbá</p>
+          <p className="link text-blue-500">Nigerian Pidgin</p>
         </div>
       </form>
 
